@@ -3,3 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.f-d-input {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#password {
+    width: 300px;
+    padding: 10px;
+    border: 3px solid green;
+}
+
+#requirement {
+    font-size: 10px;
+    color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+#colorated-row {
+    width: 350px;
+    height: 15px;
+    margin: 10px 0 10px 0;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.f-d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
