@@ -13,4 +13,13 @@ function validatePassword(password: string): void {
     conditions.forEach((condition, index) => {
         requirementList[index].style.color = condition ? 'green' : 'red';
     });
+
+    const validConditions = conditions.filter(condition => condition).length;
+    if (validConditions === 4) {
+        coloratedRow.style.backgroundColor = 'green';
+    } else if (validConditions >= 2) {
+        coloratedRow.style.backgroundColor = 'orange';
+    } else {
+        coloratedRow.style.backgroundColor = 'red';
+    }
 }
