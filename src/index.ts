@@ -22,9 +22,12 @@ function validatePassword(password: string): void {
     } else {
         coloratedRow.style.backgroundColor = 'red';
     }
-
-    passwordInput.addEventListener('input', () => {
-        const password = passwordInput.value;
-        validatePassword(password);
-    });
 }
+
+
+passwordInput.addEventListener('input', () => {
+    const password = passwordInput.value; // Ottieni il valore attuale del campo password
+    validatePassword(password); // Chiama la funzione di validazione
+});
+
+validatePassword(passwordInput.value);
