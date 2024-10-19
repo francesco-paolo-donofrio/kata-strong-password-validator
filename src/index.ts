@@ -22,4 +22,9 @@ function validatePassword(password: string): void {
     } else {
         coloratedRow.style.backgroundColor = 'red';
     }
+
+    passwordInput.addEventListener('input', () => {
+        const password = passwordInput.value;
+        validatePassword(password);
+    });
 }
