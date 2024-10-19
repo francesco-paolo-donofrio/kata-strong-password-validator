@@ -14,23 +14,28 @@
         <div id="app">
             <div>
                 <h2 class="f-d-flex">Verify your Password</h2>
-                <div class="input f-d-input f-d-flex">
-                    <input type="password" id="password" placeholder="Password">
-                </div>
-                <div id="requirement">
-                    <p class="requirement">Atleast 9 characters</p>
-                    <p class="requirement">Atleast a capital letter</p>
-                    <p class="requirement">Atleast a number</p>
-                    <p class="requirement">Atleast a special character</p>
-                </div>
-                <div class="f-d-flex">
-                    <div id="colorated-row">
-    
+                <form action="#" id="password-form" method="post">
+                    <div class="input f-d-input f-d-flex">
+                        <input type="text" id="username" placeholder="Username" autocomplete="username">
+                      </div>
+                    <div class="input f-d-input f-d-flex">
+                        <input type="password" id="password" placeholder="Password" autocomplete="new-password" required>
                     </div>
-                </div>
-                <div id="submit" class="f-d-flex">
-                    <button type="submit" class="submit-btn">Submit</button>
-                </div>
+                    <div id="requirement">
+                        <p class="requirement">Atleast 9 characters</p>
+                        <p class="requirement">Atleast a capital letter</p>
+                        <p class="requirement">Atleast a number</p>
+                        <p class="requirement">Atleast a special character</p>
+                    </div>
+                    <div class="f-d-flex">
+                        <div id="colorated-row">
+        
+                        </div>
+                    </div>
+                    <div id="submit" class="f-d-flex">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>
